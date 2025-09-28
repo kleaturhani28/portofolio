@@ -1,0 +1,67 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.footer{
+    background-color: $second-color;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    &_container{
+        padding: 2rem 0 6rem; 
+    }
+
+    &_title{
+        color: $headline-main-color;
+        text-align: center;
+        margin-bottom: $mb-2;
+    }
+
+    &_list{
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+        margin-bottom: $mb-2;
+    }
+
+    &_link{
+        color: $first-color;
+    
+    &:hover{
+        color: $text-color;
+    }
+ }
+  
+
+  &_social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+
+    &-link{
+        background-color:$body-color;
+        color:  $headline-main-color;
+        font-size: 1.125rem;
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        display: inline-flex;
+
+        @include breakpoint(lg){
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+        }
+
+        &:hover{
+            background-color: $headline-main-color;
+            color: $second-color;
+        }
+    }
+  }
+
+  &_copy{
+    display: block;
+    margin-top: 4.5rem;
+    color: $headline-main-color;
+    text-align: center;
+    font-size: size(smaller);
+  }
+}

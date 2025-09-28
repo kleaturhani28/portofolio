@@ -1,0 +1,20 @@
+/* Mobile */
+@mixin breakpoint($point) {
+    @if ($point == lg){
+        @media only screen and (max-width: 992px) {
+            @content
+        }
+    } @else if ($point == md){
+        @media only screen and (max-width: 768px) {
+            @content
+        }
+    }  @else if ($point == md_sm){
+        @media only screen and (max-width: 576px) {
+            @content
+        }
+    } @else if ($point == sm){
+        @media only screen and (max-width: 350px) {
+            @content
+        }
+    }
+}

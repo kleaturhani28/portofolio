@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400&display=swap');
+
+/* Font Type */
+$Poppins: 'Poppins', sans-serif;
+$Cabinet: 'Cabinet Grotesk', sans-serif;
+
+/* Font Size */
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+
+$font_size:(
+  "big": 3.5rem,
+  "normal": 1rem,
+  "small": 0.875rem,
+  "smaller": 0.813rem,
+  "tiny": 0.625rem
+);
+
+@function size($size-name){
+  @return map-get($font_size, $size-name)
+};
+
+/* Font Weight */
+$font-weight: (
+    "normal": 400,
+    "medium": 500,
+    "semi-bold": 600,
+);
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name)
+};
+
+/* Colors*/;
+$first-color: #eebbc3;
+$second-color: #121629;
+$headline-main-color: #fffffe;
+$text-color: #b8c1ec;
+$body-color: #232946;
+
+/* Spacing */
+ /*.5rem = 8px | 1rem = 16px ...*/
+ $header-height: 3rem;
+
+ $mb-0-25: 0.25rem;
+ $mb-0-5: 0.5rem;
+ $mb-0-75: 0.75rem;
+ $mb-1: 1rem;
+ $mb-1-5: 1.5rem;
+ $mb-2: 2rem;
+ $mb-2-5: 2.5rem;
+ $mb-3: 3rem;
+
+ /* Z-index*/
+ $z-tooltip: 10;
+ $z-fixed: 100;
+ $z-modal: 1000;

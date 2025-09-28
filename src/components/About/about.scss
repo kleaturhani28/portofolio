@@ -1,0 +1,99 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.about_container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+
+    @include breakpoint(lg){
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about_img{
+        width: 350px;
+        border-radius: 1.5rem;
+        justify-self: center;
+
+        @include breakpoint(lg){
+            width: 220px;
+        }
+    }
+
+    .about_info{
+        grid-template-columns: repeat(3, 140px);
+        gap: 0.5rem;
+        margin-bottom: $mb-2;
+
+        @include breakpoint(lg){
+            justify-content: center;
+        }
+
+        @include breakpoint(md_sm){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint(sm){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .about_box{
+            background-color: $headline-main-color;
+            border: 1px solid $second-color;
+            border-radius: 0.75rem;
+            text-align: center;
+            padding: 1rem 1.25rem;
+
+            @include breakpoint(lg){
+                padding: 0.75rem 0.5rem;
+            }
+
+            .about_icon{
+                font-size: 1.5rem;
+                color:  $second-color;
+                margin-bottom: $mb-0-5;
+            }
+
+            .about_title{
+                color: $second-color;
+                font-size: size(small);
+                font-weight: weight(medium);
+            }
+
+            .about_subtitle{
+                font-size: size(tiny); 
+                color:  $second-color;
+            }
+        }
+    }
+
+  .about-data{
+        @include breakpoint(lg){
+           text-align: center;
+        }
+        
+        @include breakpoint(md){
+            text-align: start;
+         }
+
+        .button_icon{
+            font-size: 24px;
+         }
+    }
+    
+    .about_description{
+        padding: 0 4rem 0 0;
+        margin-bottom: $mb-2-5;
+
+        @include breakpoint(lg){
+            padding: 0 5rem;
+            margin-bottom: 2rem;
+        }
+
+        @include breakpoint(md){
+            padding: 0;
+           
+    }
+  }
+}

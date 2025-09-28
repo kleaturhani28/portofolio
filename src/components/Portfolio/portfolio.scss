@@ -1,0 +1,110 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.work_filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: $mb-2;
+
+    @include breakpoint(sm){
+        column-gap: 0.25rem;
+    }
+
+    .work_item{
+        cursor: pointer;
+        color: $text-color;
+        padding: 0.25rem 0.75rem;
+        background-color: $second-color;
+        font-weight: weight(medium);
+        border-radius: 0.5rem;
+        text-transform: capitalize;
+
+        @include breakpoint(sm){
+            font-size: size(small);
+        }
+
+        &:hover{
+            background-color: $text-color;
+            color: $second-color;
+        }
+    }
+
+    /*Active Work*/
+    .active-work{
+        background-color: $text-color;
+        color: $second-color;
+    }
+}
+
+.work_container{
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+
+    @include breakpoint(lg){
+        gap: 1.25rem;
+    }
+
+    @include breakpoint(md){
+        grid-template-columns: max-content;
+    }
+
+    @include breakpoint(md_sm){
+        grid-template-columns: 1fr;
+    }
+
+    .work_card{
+        background-color: $headline-main-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1.25rem;
+        border-radius: 1rem;
+
+        @include breakpoint(lg){
+            padding: 1rem;
+        }
+        
+    .work_img{
+        width: 295px;
+        border-radius: 1rem;
+        margin-bottom: var($mb-1);
+
+        @include breakpoint(lg){
+            margin-bottom: 0.75rem;
+        }
+
+        @include breakpoint(md_sm){
+            width: 100%;
+        }
+    }
+
+    .work_title{
+        color: $second-color;
+        font-size: size(normal);
+        font-weight: weight(medium);
+        margin-bottom: $mb-0-5;
+
+        @include breakpoint(lg){
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    .work_button{
+        color: $body-color;
+        font-size: size(small);
+        display: flex;
+        align-items: center;
+        column-gap: 0.25rem;
+
+        &-icon{
+            font-size: 1rem;
+            transition: 0.4s;
+
+            &:hover{
+                transform: translateX(0.25rem);
+            }
+        }
+    }
+  } 
+}

@@ -1,0 +1,176 @@
+@import '../../styles/variables.scss';
+@import '../../styles/_mixins.scss';
+
+.home_container{
+    row-gap: 7rem;
+
+.home_content{
+    grid-template-columns: 116px  repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+
+    @include breakpoint(lg){
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    @include breakpoint(md){
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }
+
+    .home_img{
+        background: url(../../assets/home-photo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3 );
+        order: 1;
+        justify-self: center;
+        width: 300px;
+        height: 300px;
+        animation: profile_animate 8s ease-in-out infinite 1s ;
+
+        @keyframes profile_animate{
+            0%{
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+            }
+
+            50%{
+                border-radius:360% 60% 70% 40%/50% 60% 30% 60%;
+            }
+
+            100%{
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+            }
+        }
+        @include breakpoint(lg){
+            width: 250px;
+            height: 250px;
+            box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.3 );
+        }
+
+        @include breakpoint(md){
+            width: 200px;
+            height: 200px;
+            order: initial;
+            justify-self: initial;
+            box-shadow: inset 0 0 0 6px rgba(255, 255, 255, 0.3 );
+        }
+
+        @include breakpoint (sm){
+            width: 180px;
+            height: 180px;
+        }
+    }
+    
+    .home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+
+    .home_social-icon{
+        font-size: 1.25rem;
+        color: $headline-main-color;
+
+        &:hover{
+            color:$first-color;
+        }
+      }
+    }
+
+    .home_title{
+        font-size: size(big);
+        font-family: $Cabinet;
+        margin-bottom: $mb-0-25;
+    }
+
+    .home_subtitle{
+        position: relative;
+        font-size: $h3-font-size;
+        padding-left: 5.4rem;
+        font-weight: weight(normal);
+        margin-bottom: $mb-1;
+
+        @include breakpoint(lg){
+            padding-left: 3.75rem;
+            margin-bottom: $mb-1;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 1px;
+            background-color: $text-color;
+            left: 0;
+            top: 1rem;
+
+            @include breakpoint(lg){
+                width: 42px;
+                top: 0.8rem;
+            }
+        }
+    }
+
+    .home_description{
+        max-width: 400px;
+        margin-bottom: $mb-3;
+
+        @include breakpoint(lg){
+            max-width: initial;
+            margin-bottom: $mb-2-5;
+        }
+      }
+    } 
+
+  .home_scroll{
+        margin-left: 9.25rem;
+
+        @include breakpoint(lg){
+            margin-left: 7.5rem;
+        }
+
+        @include breakpoint(md){
+            display: none;
+        }
+     
+    .wheel{
+        animation: scroll 2s ease infinite;
+
+        @keyframes scroll {
+            0%{
+                transform: translateY(0);
+            }
+
+            30%{
+                transform: translateY(3.75rem);
+            }
+        }
+    }
+
+    &-name{
+        color: $headline-main-color;
+        font-weight: weight(medium);
+        margin-right: $mb-0-25;
+        margin-left: 2px;
+    }
+
+    &-arrow{
+        font-size: 1.25rem;
+        color: $headline-main-color;
+    }
+  }
+
+  .home_data{
+    &-icon{
+        font-size: 24px;
+        font-weight: weight(normal);
+        margin-left: $mb-0-25;
+    }
+    @include breakpoint(md){
+        grid-column: 1/3;
+    }
+  }
+}

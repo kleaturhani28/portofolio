@@ -1,0 +1,143 @@
+@import './variables.scss';
+@import './mixins';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: $Poppins;
+    font-size: size(normal);
+    background-color: $body-color;
+    color: $text-color;
+
+    @include breakpoint(md){
+      margin: 0 0 $header-height 0;
+    }
+}
+
+#root{
+    height: 100%;
+
+    @include breakpoint(lg){
+      $h1-font-size: 1.5rem;
+      $h2-font-size: 1.25rem;
+      $h3-font-size: 1rem;
+      font-size: size($font_size);
+    }
+
+    @include breakpoint(sm){
+      font-size: size(big);
+    }
+}
+
+button, input, textarea {
+    font-family: $Poppins;
+    font-size: size(normal);
+}
+
+h1, h2, h3 {
+  color: $headline-main-color;
+  font-weight: weight(semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable Css Classes */
+.section {
+  padding: 6rem 0 2rem;
+
+  @include breakpoint(md){
+    padding: 1.25rem 0 4rem;
+  }
+
+&_title {
+  font-size: $h1-font-size;
+  color: $headline-main-color;  
+  text-align: center;
+ }
+
+&_subtitle {
+  display: block;
+  font-size: size(small);
+  margin-bottom: 4rem;
+  text-align: center;
+
+  @include breakpoint(md){
+    margin-bottom: $mb-3;
+  }
+ }
+}
+
+/* Layout */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+   
+  @include breakpoint (lg){
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+  }
+
+  @include breakpoint(sm){
+    margin-left: $mb-1;
+    margin-right: $mb-1;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: $second-color;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: weight(medium);
+
+  @include breakpoint (lg){
+    padding: 1rem 1.75rem;
+  }
+
+&:hover {
+  background-color: $second-color;
+  color: $first-color;
+ }
+
+&_icon {
+  margin-left: $mb-0-5;
+
+  @include breakpoint (lg){
+    width: 22px;
+    height: 22px;
+  }
+}
+
+&--flex {
+  display: inline-flex;
+  align-items: center;
+ }
+}

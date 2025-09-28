@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/_mixins.scss';
+
+.scrollup{
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    background-color: $first-color;
+    opacity: 0.8;
+    padding: 0 .3rem;
+    border-radius: 0.4rem;
+    z-index: $z-tooltip;
+    transition: .4s;
+
+    @include breakpoint(lg){
+        right:1.5rem;
+        padding: 0.25rem 0.4rem;
+    }
+    
+    @include breakpoint(md){
+        bottom: 4rem;
+    }
+
+    @include breakpoint(sm){
+        right: 1rem;
+    }
+
+    &:hover{
+        background-color: $headline-main-color;
+    }
+
+    &_icon{
+        font-size: 1.5rem;
+        color: $second-color;
+
+        
+    @include breakpoint(lg){
+       font-size: 1.25rem;
+    }
+  }
+}  
+
+/* Show Scroll */
+    .show-scroll{
+        bottom: 4rem;
+    }

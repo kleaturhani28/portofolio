@@ -1,0 +1,109 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.qualification_container{
+    max-width: 768px;
+
+    @include breakpoint(lg){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include breakpoint(md){
+        margin-left: $mb-1-5;
+        margin-right: $mb-1-5;
+    }
+
+    .qualification_tabs{
+        display: flex;
+        justify-content: center;
+        margin-bottom: $mb-2;
+
+        .qualification_button{
+            font-size: $h3-font-size;
+            font-weight: weight(medium);
+            color: $headline-main-color;
+            margin: 0 $mb-1;
+            cursor: pointer;
+
+            @include breakpoint(md_sm){
+               margin: 0 $mb-0-75;
+            }
+
+            &:hover{
+                color: $first-color;
+            }
+
+            .qualification_icon{
+                font-size: 1.8rem;
+                margin-right: $mb-0-25;
+            }
+
+            &.qualification_active{
+                color: $second-color;
+            }
+        }
+    }
+
+    .qualification_sections{
+        display: grid;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+        
+        @include breakpoint(md_sm){
+            grid-template-columns: initial;
+        }
+
+        .qualification_content{
+            display: none;
+
+            &.qualification_content-active{
+                display: block;
+            }
+
+            .qualification_data{
+                display: grid;
+                grid-template-columns: 1fr max-content 1fr;
+                column-gap: 1.5rem;
+
+                @include breakpoint(sm){
+                    gap: 0.5rem;
+                }
+
+                .qualification_title{
+                    font-size: size(normal);
+                    font-weight: weight(medium);
+                }
+
+                .qualification_subtitle{
+                    display: inline-block;
+                    font-size: size(small);
+                    margin-bottom: $mb-1;
+                }
+
+                .qualification_calendar{
+                    font-size: size(small);
+                    i{
+                        margin-right: $mb-0-25;
+                    }
+                }
+
+                .qualification_rounder{
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                    background-color: $headline-main-color;
+                    border-radius: 50%;
+                }
+
+                .qualification_line{
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: $headline-main-color;
+                    transform: translate(6px, -7px);
+                }
+            }
+        }
+    }
+}

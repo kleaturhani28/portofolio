@@ -1,0 +1,134 @@
+@import '../../styles/variables.scss';
+@import '../../styles/_mixins.scss';
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $body-color;
+    
+    @include breakpoint(md){
+        top: initial;
+        bottom: 0;
+    }
+
+    .nav{
+        height: calc(#{$header-height} + 1.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        
+        @include breakpoint(md){
+            height: $header-height;
+      }
+
+      &_menu{
+        @include breakpoint(md){
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background-color: $body-color;
+            padding: 2rem 1.5rem 4rem;
+            box-shadow: 0 -1px 4px $text-color;
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: .3s;
+      }
+
+      @include breakpoint(sm){
+        padding: 2rem 0.25rem 4rem;
+      }  
+
+/* Show Menu */
+    &.show-menu{
+     @include breakpoint(md){
+        bottom: 0;
+    }
+   }
+  }
+ 
+        &_logo, &_toggle{
+            color: $headline-main-color;
+            font-weight: weight(medium);
+        }
+
+        &_logo{
+            @include breakpoint(sm){
+                font-size: size(normal);
+            }
+        }
+
+        &_list{
+            display: flex;
+            column-gap: 2rem;
+
+            @include breakpoint(md){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+
+            @include breakpoint(sm){
+                column-gap: 0;
+            }
+        }
+
+        &_link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: size(small);
+            color: $first-color;
+            font-weight: weight(medium);
+            transition: .3s;
+
+           &:hover{
+                color: $headline-main-color;
+            }
+        }
+
+        &_icon, &_close, &_toggle{
+            display: none;
+
+            @include breakpoint(md){
+                display: block;
+            }
+        }
+
+        &_icon{
+            @include breakpoint(md){
+                font-size: 1.2rem;
+            }
+        }
+
+        &_close{
+            @include breakpoint (md){
+                position: absolute;
+                right: 1.3rem;
+                bottom: .5rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: $headline-main-color;
+
+                &:hover{
+                    color: $text-color;
+                }
+            }
+        }
+
+        &_toggle{
+        @include breakpoint (md){
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    }
+  }
+}
+
+/* Change Background Header */ 
+.scroll-header{
+    box-shadow: 0 -1px 4px $text-color;
+}
