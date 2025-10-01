@@ -2,6 +2,7 @@ import React from 'react';
 import Social from './Social'; 
 import Data from './Data';
 import ScrollDown from './ScrollDown';
+import photo from '../../assets/home-photo.png';  
 import "./home.scss";
 
 const Home = () => {
@@ -9,14 +10,16 @@ const Home = () => {
     <section className="home section" id="home">
       <div className="home_container container grid">
         <div className="home_content grid">
-          <Social/>
+          <Social />
 
-          <div className="home_img"></div>
+          <div 
+            className="home_img"
+            style={{ backgroundImage: `url(${photo})` }}
+          ></div>
 
-          <Data/>
+          <Data />
         </div>
-        
-        <ScrollDown/>
+        <ScrollDown />
       </div>
     </section>
   );

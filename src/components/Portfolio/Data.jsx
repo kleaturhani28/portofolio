@@ -26,31 +26,27 @@ export const projectsData = [
   },
   {
     id: 4,
-    image: Img4,
     title: "Library Management (Python/Tkinter)",
     category: "app",
     link: "#", // es. https://github.com/kleaturhani28/library-management-tkinter
   },
   {
     id: 5,
-    image: Img5,
     title: "House of Tasty (Android – Kotlin/Flutter)",
     category: "app",
     link: "#", // es. https://github.com/kleaturhani28/house-of-tasty
   },
   {
     id: 6,
-    image: Img6,
     title: "Olympic Club (Android – Kotlin)",
     category: "app",
     link: "#", // es. https://github.com/kleaturhani28/olympic-club-android
   },
   {
     id: 7,
-    image: Img7,
     title: "Portfolio Website",
     category: "design",
-    link: "https://kleaturhani28.github.io/", // live
+    link: "https://kleaturhani28.github.io/portofolio", // live
   },
 ];
 
