@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.7b3fe97c.css",
+    "main.js": "/portofolio/static/js/main.53d1c587.js",
+    "static/media/home-photo.png": "/portofolio/static/media/home-photo.8f60783e6bc780bccb72.png",
+    "static/media/photo-2.jpg": "/portofolio/static/media/photo-2.e11cf0787bd63aae89c3.jpg",
+    "static/media/CV_KLEA_TURHANI.pdf": "/portofolio/static/media/CV_KLEA_TURHANI.ce5a237e51d7cc9ea98d.pdf",
+    "static/media/logoweb.png": "/portofolio/static/media/logoweb.6018be610acd79323120.png",
+    "static/media/alison.jpg": "/portofolio/static/media/alison.bde1d071d3ee6910bf84.jpg",
+    "static/media/crdf.jpg": "/portofolio/static/media/crdf.b79177f9aca5664e4413.jpg",
+    "index.html": "/portofolio/index.html",
+    "main.7b3fe97c.css.map": "/portofolio/static/css/main.7b3fe97c.css.map",
+    "main.53d1c587.js.map": "/portofolio/static/js/main.53d1c587.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b3fe97c.css",
+    "static/js/main.53d1c587.js"
+  ]
+}
