@@ -1,52 +1,51 @@
-import Img1 from '../../assets/photo-3.png';
-import Img2 from '../../assets/photo-4.jpg';
-import Img3 from '../../assets/photo-5.jpg';
-
 export const projectsData = [
   {
     id: 1,
-    image: Img1,
     title: "ERP ↔ MES Integration (Delphi)",
     category: "app",
-    link: "#", // es. https://github.com/kleaturhani28/erp-mes-integration
+    link: "https://github.com/kleaturhani28/ERP-MES-Integration-Delphi-",
   },
   {
     id: 2,
-    image: Img2,
     title: "Digital Signature Automation (Delphi)",
     category: "app",
-    link: "#", // es. https://github.com/kleaturhani28/digital-signature-automation
+    link: "https://github.com/kleaturhani28/-Digital-Signature-Automation-Delphi-",
   },
   {
     id: 3,
-    image: Img3,
-    title: "Student Rental Management (Laravel)",
+    title: "Student Rental Management (Laravel) – Team Project",
     category: "web",
-    link: "#", // es. https://github.com/kleaturhani28/student-rental-laravel
+    link: "https://github.com/FranciscoMessina00/TecWebLaravel", 
   },
   {
     id: 4,
-    title: "Library Management (Python/Tkinter)",
+    title: "TechMobile Store Management (Python/Tkinter)",
     category: "app",
-    link: "#", // es. https://github.com/kleaturhani28/library-management-tkinter
+    link: "https://github.com/kleaturhani28/TechMobile-Store-Management-Python-Tkinter-", 
   },
   {
     id: 5,
     title: "House of Tasty (Android – Kotlin/Flutter)",
     category: "app",
-    link: "#", // es. https://github.com/kleaturhani28/house-of-tasty
+    link: "https://github.com/kleaturhani28/House-of-Tasty-Android-Kotlin-Flutter-", 
   },
   {
     id: 6,
     title: "Olympic Club (Android – Kotlin)",
     category: "app",
-    link: "#", // es. https://github.com/kleaturhani28/olympic-club-android
+    link: "https://github.com/kleaturhani/OlympicGames",
   },
   {
     id: 7,
+    title: "ToDoList App (Android – Kotlin)",
+    category: "app",
+    link: "https://github.com/kleaturhani/ToDoListApp",
+  },
+  {
+    id: 8,
     title: "Portfolio Website",
     category: "design",
-    link: "https://kleaturhani28.github.io/portofolio", // live
+    link: "https://github.com/kleaturhani28/portofolio", 
   },
 ];
 

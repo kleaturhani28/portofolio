@@ -1,110 +1,105 @@
 @import '../../styles/_variables.scss';
 @import '../../styles/_mixins.scss';
 
-.work_filters{
+/* Scopo: regole SOLO per la sezione Certifications */
+section.certifications {
+  /* riuso dei filtri (se usi la stessa UI dei works) */
+  .work_filters {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 0.75rem;
+    column-gap: .75rem;
     margin-bottom: $mb-2;
 
-    @include breakpoint(sm){
-        column-gap: 0.25rem;
+    .work_item {
+      cursor: pointer;
+      color: $text-color;
+      padding: .25rem .75rem;
+      background-color: $second-color;
+      font-weight: weight(medium);
+      border-radius: .5rem;
+      text-transform: capitalize;
+
+      &:hover { background-color: $text-color; color: $second-color; }
     }
 
-    .work_item{
-        cursor: pointer;
-        color: $text-color;
-        padding: 0.25rem 0.75rem;
-        background-color: $second-color;
-        font-weight: weight(medium);
-        border-radius: 0.5rem;
-        text-transform: capitalize;
+    .active-work { background-color: $text-color; color: $second-color; }
+  }
 
-        @include breakpoint(sm){
-            font-size: size(small);
-        }
+  /* griglia delle card (solo qui, per non toccare il portfolio) */
+  .work_container {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
 
-        &:hover{
-            background-color: $text-color;
-            color: $second-color;
-        }
-    }
+    @include breakpoint(md)   { grid-template-columns: 1fr; gap: 1.25rem; }
+    @include breakpoint(md_sm){ grid-template-columns: 1fr; }
+  }
 
-    /*Active Work*/
-    .active-work{
-        background-color: $text-color;
-        color: $second-color;
-    }
-}
+  /* ---- CARD ---- */
+  .cert_card {
+    background: $headline-main-color;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+  }
 
-.work_container{
-    grid-template-columns: repeat(2, max-content);
-    gap: 3rem;
-    justify-content: center;
+  .cert_header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
 
-    @include breakpoint(lg){
-        gap: 1.25rem;
-    }
+  .cert_icon { font-size: 1.1rem; color: $text-color; }
 
-    @include breakpoint(md){
-        grid-template-columns: max-content;
-    }
+  .cert_title {
+    color: $second-color;
+    font-weight: weight(semiBold);
+    font-size: size(normal);
+  }
 
-    @include breakpoint(md_sm){
-        grid-template-columns: 1fr;
-    }
+  .cert_category {
+    font-size: size(small);
+    color: $text-color;
+    opacity: .8;
+    margin-bottom: $mb-0-5;
+  }
 
-    .work_card{
-        background-color: $headline-main-color;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 1.25rem;
-        border-radius: 1rem;
+  /* ---- BOTTONI ---- */
+  /* rende il bottone compatto, non full-width e allineato a sx */
+  .cert_button {
+    align-self: flex-start;
+    display: inline-flex;           /* no full width */
+    align-items: center;
+    gap: .4rem;
 
-        @include breakpoint(lg){
-            padding: 1rem;
-        }
-        
-    .work_img{
-        width: 295px;
-        border-radius: 1rem;
-        margin-bottom: var($mb-1);
+    padding: .5rem .9rem;
+    font-size: size(small);
+    font-weight: weight(medium);
+    border-radius: .75rem;
 
-        @include breakpoint(lg){
-            margin-bottom: 0.75rem;
-        }
+    background: $second-color;      /* cambia se vuoi un rosa custom */
+    color: #ffff;
 
-        @include breakpoint(md_sm){
-            width: 100%;
-        }
-    }
+    box-shadow: 0 2px 0 rgba(0,0,0,.08);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
 
-    .work_title{
-        color: $second-color;
-        font-size: size(normal);
-        font-weight: weight(medium);
-        margin-bottom: $mb-0-5;
+    &:hover  { transform: translateY(-1px); }
+    &:active { transform: translateY(0); box-shadow: none; }
+  }
 
-        @include breakpoint(lg){
-            margin-bottom: 0.25rem;
-        }
-    }
+  /* Variante “No Link” */
+  .button--ghost.cert_button {
+    background: transparent;
+    color: $text-color;
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none; /* non cliccabile */
+  }
 
-    .work_button{
-        color: $body-color;
-        font-size: size(small);
-        display: flex;
-        align-items: center;
-        column-gap: 0.25rem;
-
-        &-icon{
-            font-size: 1rem;
-            transition: 0.4s;
-
-            &:hover{
-                transform: translateX(0.25rem);
-            }
-        }
-    }
-  } 
+  /* icona del link un filo più piccola */
+  .cert_button .uil { font-size: 1rem; }
 }

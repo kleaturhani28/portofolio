@@ -1,3 +1,6 @@
+import crdfImg from '../../assets/crdf.jpg';
+import alisonImg from '../../assets/alison.jpg';
+
 export const certificationsData = [
   // ✅ Google Cloud
   {
@@ -11,6 +14,14 @@ export const certificationsData = [
     title: "Introduction to Generative AI",
     category: "AI/ML",
     link: "https://www.cloudskillsboost.google/public_profiles/e62be0cb-5ef7-44de-9f35-8922bc04db5e/badges/11896477",
+  },
+
+  // Google Play
+  {
+    id: 3,
+    title: "Google Play Academy - Store Listing Certificate",
+    category: "Google Play",
+    link: "https://www.credential.net/3597eb41-756a-4d6e-8f03-3d7b1b44d7b5#acc.zuVpyFtv?trk=public_profile_see-credential",
   },
 
   // ✅ IBM SkillsBuild
@@ -44,7 +55,7 @@ export const certificationsData = [
     id: 7,
     title: "Computer Hardware Basics",
     category: "Other",
-    link: null,
+    link: "https://www.credly.com/badges/69a3d200-35bb-47a8-97e6-619bf68a919a?trk=public_profile_see-credential",
   },
   {
     id: 8,
@@ -71,13 +82,26 @@ export const certificationsData = [
     title: "Best practices in cybersecurity & cyber-hygiene",
     category: "Security",
     link: null,
+    image: crdfImg,
+  },
+
+
+  // ✅ Microservices Architecture
+  {
+    id: 11,
+    title: "Microservices Architecture - Alison",
+    category: "Software Engineering",
+    link: null,
+    image: alisonImg,
   },
 ];
 
 export const certificationsNav = [
   { name: "all" },
   { name: "AI/ML" },
+  { name: "Google Play" },
   { name: "Python" },
   { name: "Security" },
   { name: "Other" },
+  { name: "Software Engineering" },
 ];

@@ -1,6 +1,9 @@
 import React from 'react';
 
 const CertificationItem = ({ item }) => {
+  const hasLink  = typeof item.link === 'string' && item.link.trim().length > 0;
+  const hasImage = typeof item.image === 'string' && item.image.trim().length > 0;
+
   return (
     <div className="cert_card" key={item.id}>
       <div className="cert_header">
@@ -10,7 +13,7 @@ const CertificationItem = ({ item }) => {
 
       <span className="cert_category">{item.category}</span>
 
-      {item.link ? (
+      {hasLink ? (
         <a
           href={item.link}
           className="button button--flex cert_button"
@@ -19,10 +22,10 @@ const CertificationItem = ({ item }) => {
         >
           View Certificate <i className="uil uil-external-link-alt"></i>
         </a>
+      ) : hasImage ? (
+        <img src={item.image} alt={item.title} className="cert_image" loading="lazy" />
       ) : (
-        <span className="button button--ghost cert_button">
-          No Link <i className="uil uil-times-circle"></i>
-        </span>
+        <span className="button button--ghost cert_button">No Link</span>
       )}
     </div>
   );
