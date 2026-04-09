@@ -10,62 +10,57 @@ const Services = () => {
     return (
         <section className="services section" id="services">
             <h2 className="section_title">Services</h2>
-            <span className="section_subtitle">What i offer</span>
+            <span className="section_subtitle">Areas I work on</span>
 
             <div className="services_container container grid">
                 <div className="services_content">
                     <div>
                         <i className="uil uil-web-grid services_icon"></i>
                         <h3 className="services_title">
-                            Backend &<br /> Integrations
+                            Backend & <br /> Integrations
                         </h3>
                     </div>
 
-                    <span className="services_button" onClick={() =>
-                        toggleTab(1)}>
+                    <span className="services_button" onClick={() => toggleTab(1)}>
                         View More
-                        <i className="uil uil-arrow-right 
-                services_button-icon"></i></span>
+                        <i className="uil uil-arrow-right services_button-icon"></i>
+                    </span>
 
-                    <div className={toggleState === 1 ?
-                        "services_modal active-modal" : "services_modal"}>
+                    <div className={toggleState === 1 ? 'services_modal active-modal' : 'services_modal'}>
                         <div className="services_modal-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times
-                        services_modal-close"></i>
+                            <i onClick={() => toggleTab(0)} className="uil uil-times services_modal-close"></i>
 
-                            <h3 className="services_modal-title">
-                                Backend & Integrations
-                            </h3>
+                            <h3 className="services_modal-title">Backend & Integrations</h3>
                             <p className="services_modal-description">
-                                Reliable backends, ERP↔MES integrations and workflow automation.
+                                Development of backend solutions, system integrations, and workflow automation.
                             </p>
 
                             <ul className="services_modal-services grid">
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        ERP↔MES integration & digital-signature automation (Delphi)
+                                        ERP and MES integrations for business and industrial processes
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        REST APIs, services with logging, retries, scheduling
+                                        REST APIs, background services, logging, and retry mechanisms
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        Caching/queue basics (Redis), background jobs
+                                        Workflow automation and asynchronous process handling
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        Databases: MySQL & SQLite (schema, queries, migrations)
+                                        Database design and management with MySQL, SQLite, and SQL Server
                                     </p>
                                 </li>
                             </ul>
@@ -77,46 +72,43 @@ const Services = () => {
                     <div>
                         <i className="uil uil-arrow services_icon"></i>
                         <h3 className="services_title">
-                            Web<br /> Development
+                            Web <br /> Development
                         </h3>
                     </div>
 
-                    <span className="services_button" onClick={() =>
-                        toggleTab(2)}>
+                    <span className="services_button" onClick={() => toggleTab(2)}>
                         View More
-                        <i className="uil uil-arrow-right 
-                services_button-icon"></i></span>
+                        <i className="uil uil-arrow-right services_button-icon"></i>
+                    </span>
 
-                    <div className={toggleState === 2 ?
-                        "services_modal active-modal" : "services_modal"}>
+                    <div className={toggleState === 2 ? 'services_modal active-modal' : 'services_modal'}>
                         <div className="services_modal-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times
-                        services_modal-close"></i>
+                            <i onClick={() => toggleTab(0)} className="uil uil-times services_modal-close"></i>
 
                             <h3 className="services_modal-title">Web Development</h3>
                             <p className="services_modal-description">
-                                From idea to deploy: responsive sites and internal tools.
+                                Creation of responsive websites, dashboards, and web applications.
                             </p>
 
                             <ul className="services_modal-services grid">
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        Laravel/PHP backends, CRUD, authentication
+                                        Frontend development with React, HTML, CSS, and JavaScript
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        React frontends & dashboards (responsive)
+                                        Web applications and internal tools with Laravel and PHP
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        REST API integration & form workflows
+                                        Form workflows, API integration, and responsive user interfaces
                                     </p>
                                 </li>
                             </ul>
@@ -128,46 +120,43 @@ const Services = () => {
                     <div>
                         <i className="uil uil-edit services_icon"></i>
                         <h3 className="services_title">
-                            Mobile Apps<br /> (Flutter/Kotlin)
+                            Mobile Apps <br /> (Flutter / Kotlin)
                         </h3>
                     </div>
 
-                    <span className="services_button" onClick={() =>
-                        toggleTab(3)}>
+                    <span className="services_button" onClick={() => toggleTab(3)}>
                         View More
-                        <i className="uil uil-arrow-right 
-                services_button-icon"></i></span>
+                        <i className="uil uil-arrow-right services_button-icon"></i>
+                    </span>
 
-                    <div className={toggleState === 3 ?
-                        "services_modal active-modal" : "services_modal"}>
+                    <div className={toggleState === 3 ? 'services_modal active-modal' : 'services_modal'}>
                         <div className="services_modal-content">
-                            <i onClick={() => toggleTab(0)} className="uil uil-times
-                        services_modal-close"></i>
+                            <i onClick={() => toggleTab(0)} className="uil uil-times services_modal-close"></i>
 
                             <h3 className="services_modal-title">Mobile Apps</h3>
                             <p className="services_modal-description">
-                                Kotlin native Android development
+                                Mobile application development for study, demos, and practical projects.
                             </p>
 
                             <ul className="services_modal-services grid">
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        Flutter cross-platform UI
+                                        Android development with Kotlin
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        API integration & local data storage
+                                        Cross-platform interfaces with Flutter
                                     </p>
                                 </li>
 
                                 <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
                                     <p className="services_modal-info">
-                                        Deployable demo builds (APK)
+                                        API integration and local data handling
                                     </p>
                                 </li>
                             </ul>
@@ -179,37 +168,51 @@ const Services = () => {
                     <div>
                         <i className="uil uil-life-ring services_icon"></i>
                         <h3 className="services_title">
-                            Support &<br /> Maintenance
+                            Support & <br /> Maintenance
                         </h3>
                     </div>
 
                     <span className="services_button" onClick={() => toggleTab(4)}>
-                        View More <i className="uil uil-arrow-right services_button-icon"></i>
+                        View More
+                        <i className="uil uil-arrow-right services_button-icon"></i>
                     </span>
 
-                    <div className={toggleState === 4 ? "services_modal active-modal" : "services_modal"}>
+                    <div className={toggleState === 4 ? 'services_modal active-modal' : 'services_modal'}>
                         <div className="services_modal-content">
                             <i onClick={() => toggleTab(0)} className="uil uil-times services_modal-close"></i>
+
                             <h3 className="services_modal-title">Support & Maintenance</h3>
                             <p className="services_modal-description">
-                                Keeping apps reliable and secure after deployment.
+                                Ongoing support to keep applications stable, updated, and efficient.
                             </p>
+
                             <ul className="services_modal-services grid">
-                                <li>
+                                <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
-                                    <p>Bug fixing & performance optimization</p>
+                                    <p className="services_modal-info">
+                                        Bug fixing and performance improvements
+                                    </p>
                                 </li>
-                                <li>
+
+                                <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
-                                    <p>Small feature updates & UX improvements</p>
+                                    <p className="services_modal-info">
+                                        Small feature updates and UI refinements
+                                    </p>
                                 </li>
-                                <li>
+
+                                <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
-                                    <p>Monitoring, error logging & security checks</p>
+                                    <p className="services_modal-info">
+                                        Monitoring, logging, and general maintenance activities
+                                    </p>
                                 </li>
-                                <li>
+
+                                <li className="services_modal-service">
                                     <i className="uil uil-check-circle services_modal-icon"></i>
-                                    <p>Flexible freelance / remote availability</p>
+                                    <p className="services_modal-info">
+                                        Remote collaboration and technical support
+                                    </p>
                                 </li>
                             </ul>
                         </div>

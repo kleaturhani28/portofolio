@@ -1,15 +1,13 @@
 import React from 'react';
 import './skills.scss';
 
-
 const Architecture = () => {
   return (
     <div className="skills_content">
-      <h3 className="skills_title">Software Architecture</h3>
+      <h3 className="skills_title">Architecture & Patterns</h3>
 
       <div className="skills_box">
         <div className="skills_group">
-
           <div className="skills_data">
             <i className='bx bx-badge-check'></i>
             <div>
@@ -33,15 +31,13 @@ const Architecture = () => {
               <span className="skills_level">Intermediate</span>
             </div>
           </div>
-
         </div>
 
         <div className="skills_group">
-
           <div className="skills_data">
             <i className='bx bx-badge-check'></i>
             <div>
-              <h3 className="skills_name">MVC Pattern</h3>
+              <h3 className="skills_name">MVC</h3>
               <span className="skills_level">Intermediate</span>
             </div>
           </div>
@@ -49,7 +45,7 @@ const Architecture = () => {
           <div className="skills_data">
             <i className='bx bx-badge-check'></i>
             <div>
-              <h3 className="skills_name">MVP Pattern</h3>
+              <h3 className="skills_name">MVP</h3>
               <span className="skills_level">Intermediate</span>
             </div>
           </div>
@@ -57,7 +53,7 @@ const Architecture = () => {
           <div className="skills_data">
             <i className='bx bx-badge-check'></i>
             <div>
-              <h3 className="skills_name">MVVM Pattern</h3>
+              <h3 className="skills_name">MVVM</h3>
               <span className="skills_level">Intermediate</span>
             </div>
           </div>
@@ -73,7 +69,7 @@ const Architecture = () => {
           <div className="skills_data">
             <i className='bx bx-badge-check'></i>
             <div>
-              <h3 className="skills_name">Observer / Repository</h3>
+              <h3 className="skills_name">Repository / Observer</h3>
               <span className="skills_level">Applied</span>
             </div>
           </div>
@@ -85,12 +81,10 @@ const Architecture = () => {
               <span className="skills_level">Applied</span>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
-
 
 export default Architecture;

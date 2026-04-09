@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './qualification.scss';
 
 const Qualifications = () => {
@@ -10,8 +10,8 @@ const Qualifications = () => {
 
   return (
     <section className="qualification section" id="qualification">
-      <h2 className="section_title">Qualification</h2>
-      <span className="section_subtitle">My personal journey</span>
+      <h2 className="section_title">Qualifications</h2>
+      <span className="section_subtitle">Education & experience</span>
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
@@ -79,7 +79,7 @@ const Qualifications = () => {
               <div>
                 <h3 className="qualification_title">Software Developer</h3>
                 <span className="qualification_subtitle">
-                  Graphite Albania – Tirana
+                  Graphite S.R.L – Remote / Italy
                 </span>
                 <div className="qualification_calendar">
                   <i className="uil uil-calendar-alt"></i>
@@ -103,35 +103,15 @@ const Qualifications = () => {
 
               <div>
                 <h3 className="qualification_title">
-                  Technical Operator (PEI) – Volunteering
+                  Technical Volunteer Operator PEI
                 </h3>
                 <span className="qualification_subtitle">
                   Central Election Commission (KQZ) – Tirana
                 </span>
                 <div className="qualification_calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  May 2023
+                  Election periods – 2021, 2023, 2025, ongoing
                 </div>
-              </div>
-            </div>
-
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">
-                  Technical Operator (PEI) – Volunteering
-                </h3>
-                <span className="qualification_subtitle">
-                  Central Election Commission (KQZ) – Tirana
-                </span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>
-                  April 2021
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
               </div>
             </div>
           </div>

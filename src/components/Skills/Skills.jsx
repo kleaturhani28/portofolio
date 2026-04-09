@@ -10,15 +10,16 @@ import './skills.scss';
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
-      <h2 className="section_title">Skills</h2>
-      <span className="section_subtitle">My technical level</span>
+      <h2 className="section_title">Technical Skills</h2>
+      <span className="section_subtitle">Technologies & expertise</span>
+
 
       <div className="skills_container container grid">
-        <Frontend />
         <Backend />
-        <Mobile />
+        <Frontend />
         <ProgrammingLanguages />
         <ArchitecturePattern />
+        <Mobile />
         <ToolsOther />
       </div>
     </section>

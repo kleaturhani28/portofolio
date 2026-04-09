@@ -6,11 +6,11 @@ import './portfolio.scss';
 const Portfolio = () => {
   return (
     <section className="portfolio section" id="portfolio">
-      <h2 className="section_title">My Portfolio</h2>
-      <span className="section_subtitle">Most Recent work</span>
+      <h2 className="section_title">Projects</h2>
+      <span className="section_subtitle">Selected work</span>
 
-      <Works/>
-    </section> 
+      <Works />
+    </section>
   );
 };
 

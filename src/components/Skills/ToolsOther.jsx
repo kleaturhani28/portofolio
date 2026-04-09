@@ -1,7 +1,6 @@
 import React from 'react';
 import './skills.scss';
 
-
 const Tools = () => {
   return (
     <div className="skills_content">
@@ -9,9 +8,8 @@ const Tools = () => {
 
       <div className="skills_box">
         <div className="skills_group">
-
           <div className="skills_data">
-            <i className='bx bx-badge-check'></i>
+            <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills_name">Git / GitHub</h3>
               <span className="skills_level">Intermediate</span>
@@ -19,7 +17,7 @@ const Tools = () => {
           </div>
 
           <div className="skills_data">
-            <i className='bx bx-badge-check'></i>
+            <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills_name">Docker</h3>
               <span className="skills_level">Basic</span>
@@ -27,38 +25,42 @@ const Tools = () => {
           </div>
 
           <div className="skills_data">
-            <i className='bx bx-badge-check'></i>
-            <div>
-              <h3 className="skills_name">REST API</h3>
-              <span className="skills_level">Intermediate</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="skills_group">
-
-          <div className="skills_data">
-            <i className='bx bx-badge-check'></i>
+            <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills_name">FireDAC / ADO</h3>
               <span className="skills_level">Intermediate</span>
             </div>
           </div>
+        </div>
 
+        <div className="skills_group">
           <div className="skills_data">
-            <i className='bx bx-badge-check'></i>
+            <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills_name">OOP & Clean Code</h3>
-              <span className="skills_level">Applied</span>
+              <h3 className="skills_name">Redis</h3>
+              <span className="skills_level">Basic</span>
             </div>
           </div>
 
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Automation Systems</h3>
+              <span className="skills_level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">PLC (Basic)</h3>
+              <span className="skills_level">Basic</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 
 export default Tools;

@@ -2,7 +2,7 @@ import React from 'react';
 import Social from './Social'; 
 import Data from './Data';
 import ScrollDown from './ScrollDown';
-import photo from '../../assets/home-photo.png';  
+import photo from '../../assets/avatar1-homepage.png';  
 import "./home.scss";
 
 const Home = () => {
