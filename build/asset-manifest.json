@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.a2b25951.css",
-    "main.js": "/portofolio/static/js/main.7cd53e33.js",
+    "main.css": "/portofolio/static/css/main.f92bbb26.css",
+    "main.js": "/portofolio/static/js/main.f7ea7779.js",
     "static/media/womaninatech workspace.png": "/portofolio/static/media/womaninatech workspace.47073670893c8e417dee.png",
     "static/media/avatar1-homepage.png": "/portofolio/static/media/avatar1-homepage.b1893040298f21ea9173.png",
     "static/media/klea_turhani_cv_eng.pdf": "/portofolio/static/media/klea_turhani_cv_eng.e267d958b0b1422a83c0.pdf",
     "static/media/logoweb.png": "/portofolio/static/media/logoweb.6018be610acd79323120.png",
+    "static/media/htmx.jpg": "/portofolio/static/media/htmx.28129886da8e545f211c.jpg",
     "static/media/alison.jpg": "/portofolio/static/media/alison.bde1d071d3ee6910bf84.jpg",
     "static/media/crdf.jpg": "/portofolio/static/media/crdf.b79177f9aca5664e4413.jpg",
     "index.html": "/portofolio/index.html",
-    "main.a2b25951.css.map": "/portofolio/static/css/main.a2b25951.css.map",
-    "main.7cd53e33.js.map": "/portofolio/static/js/main.7cd53e33.js.map"
+    "main.f92bbb26.css.map": "/portofolio/static/css/main.f92bbb26.css.map",
+    "main.f7ea7779.js.map": "/portofolio/static/js/main.f7ea7779.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2b25951.css",
-    "static/js/main.7cd53e33.js"
+    "static/css/main.f92bbb26.css",
+    "static/js/main.f7ea7779.js"
   ]
 }
