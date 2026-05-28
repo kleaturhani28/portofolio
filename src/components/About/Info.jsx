@@ -23,7 +23,9 @@ const Info = () => {
       <div className="about_box">
         <i className="bx bx-award about_icon"></i>
         <h3 className="about_title">Experience</h3>
-        <span className="about_subtitle">{workYears}+ years</span>
+        <span className="about_subtitle">
+          {workYears < 1 ? '< 1 year' : `${workYears}+ years`}
+        </span>
       </div>
 
       <div className="about_box">
@@ -35,7 +37,7 @@ const Info = () => {
       <div className="about_box">
         <i className="bx bx-support about_icon"></i>
         <h3 className="about_title">Availability</h3>
-        <span className="about_subtitle">Remote</span>
+        <span className="about_subtitle">Remote / Hybrid</span>
       </div>
     </div>
   );

@@ -47,6 +47,12 @@ export const projectsData = [
     category: "web",
     link: "https://github.com/kleaturhani28/portofolio",
   },
+  {
+    id: 9,
+    title: "Nasa Neo Web App",
+    category: "fullstack",
+    link: "https://github.com/kleaturhani28/neo-watch-webapp",
+  },
 ];
 
 export const projectsNav = [
@@ -54,4 +60,5 @@ export const projectsNav = [
   { name: "web" },
   { name: "backend" },
   { name: "mobile" },
+  { name: "fullstack" },
 ];

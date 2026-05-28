@@ -15,38 +15,39 @@ const Qualifications = () => {
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
-          <div
+          <button
+            type="button"
             className={
               toggleState === 1
-                ? "qualification_button qualification_active button--flex"
-                : "qualification_button button--flex"
+                ? 'qualification_button education_button qualification_active button--flex'
+                : 'qualification_button education_button button--flex'
             }
             onClick={() => toggleTab(1)}
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
             Education
-          </div>
+          </button>
 
-          <div
+          <button
+            type="button"
             className={
               toggleState === 2
-                ? "qualification_button qualification_active button--flex"
-                : "qualification_button button--flex"
+                ? 'qualification_button experience_button qualification_active button--flex'
+                : 'qualification_button experience_button button--flex'
             }
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification_icon"></i>
             Experience
-          </div>
+          </button>
         </div>
 
         <div className="qualification_sections">
-          {/* --- Education --- */}
           <div
             className={
               toggleState === 1
-                ? "qualification_content qualification_content-active"
-                : "qualification_content"
+                ? 'qualification_content experience_content qualification_content-active'
+                : 'qualification_content experience_content'
             }
           >
             <div className="qualification_data">
@@ -55,24 +56,21 @@ const Qualifications = () => {
                   Bachelor in Computer & Automation Engineering
                 </h3>
                 <span className="qualification_subtitle">
-                  Polytechnic University of Marche – Ancona, IT
+                  Polytechnic University of Marche – Ancona, Italy
                 </span>
-                {/* no date here as requested */}
               </div>
 
               <div>
                 <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
               </div>
             </div>
           </div>
 
-          {/* --- Experience --- */}
           <div
             className={
               toggleState === 2
-                ? "qualification_content qualification_content-active"
-                : "qualification_content"
+                ? 'qualification_content qualification_content-active'
+                : 'qualification_content'
             }
           >
             <div className="qualification_data">
@@ -98,7 +96,6 @@ const Qualifications = () => {
 
               <div>
                 <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
               </div>
 
               <div>
@@ -106,11 +103,11 @@ const Qualifications = () => {
                   Technical Volunteer Operator PEI
                 </h3>
                 <span className="qualification_subtitle">
-                  Central Election Commission (KQZ) – Tirana
+                  Central Election Commission, KQZ – Tirana, Albania
                 </span>
                 <div className="qualification_calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  Election periods – 2021, 2023, 2025, ongoing
+                  Election periods: 2021, 2023, 2025 – Ongoing
                 </div>
               </div>
             </div>

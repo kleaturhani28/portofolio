@@ -2,7 +2,6 @@ import React from 'react';
 import Works from './Works';
 import './portfolio.scss';
 
-
 const Portfolio = () => {
   return (
     <section className="portfolio section" id="portfolio">
