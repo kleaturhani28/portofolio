@@ -26,7 +26,7 @@ const Data = () => {
         Software Developer
       </h3>
       <p className="home_description">
-        Turning ideas into practical and reliable digital solutions.
+        I build practical, reliable, and user-focused digital solutions.
       </p>
 
       <a href="#contact" className="button button--flex">

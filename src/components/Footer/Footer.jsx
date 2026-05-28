@@ -2,10 +2,12 @@ import React from 'react';
 import './footer.scss';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="footer">
-             <div className="footer_container container">
-                <h1 className="footer_title">Building smart & reliable software</h1>
+            <div className="footer_container container">
+                <h2 className="footer_title">Building smart & reliable software</h2>
 
                 <ul className="footer_list">
                     <li>
@@ -22,25 +24,29 @@ const Footer = () => {
                 </ul>
 
                 <div className="footer_social">
-                    <a href="https://github.com/kleaturhani28"
+                    <a
+                        href="https://github.com/kleaturhani28"
                         className="footer_social-link"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="GitHub profile"
                     >
-                        <i class="bx bxl-github"></i>
+                        <i className="bx bxl-github"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/klea-turhani/"
+                    <a
+                        href="https://www.linkedin.com/in/klea-turhani/"
                         className="footer_social-link"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="LinkedIn profile"
                     >
-                        <i class="bx bxl-linkedin"></i>
+                        <i className="bx bxl-linkedin"></i>
                     </a>
                 </div>
 
                 <span className="footer_copy">
-                    &#169;Klea Turhani. All rights reserved.
+                    &#169; {currentYear} Klea Turhani. All rights reserved.
                 </span>
             </div>
         </footer>

@@ -3,23 +3,28 @@ import './home.scss';
 
 const Social = () => {
   return (
-    <div className="home_social"> 
-        <a href="https://www.linkedin.com/in/klea-turhani/" 
+    <div className="home_social">
+      <a
+        href="https://www.linkedin.com/in/klea-turhani/"
         className="home_social-icon"
-        target="_blank" 
+        target="_blank"
         rel="noopener noreferrer"
-        >
-            <i className="uil uil-linkedin-alt"></i>
-        </a>
-        <a href="https://github.com/kleaturhani28" 
-        className="home_social-icon" 
-        target="_blank" 
+        aria-label="LinkedIn profile"
+      >
+        <i className="uil uil-linkedin-alt"></i>
+      </a>
+
+      <a
+        href="https://github.com/kleaturhani28"
+        className="home_social-icon"
+        target="_blank"
         rel="noopener noreferrer"
-        >
-            <i className="uil uil-github-alt"></i>
-        </a>
+        aria-label="GitHub profile"
+      >
+        <i className="uil uil-github-alt"></i>
+      </a>
     </div>
-  )
-}
+  );
+};
 
 export default Social;

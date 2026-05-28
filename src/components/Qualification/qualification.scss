@@ -1,94 +1,114 @@
 @import '../../styles/_variables.scss';
 @import '../../styles/_mixins.scss';
 
-.qualification_container{
+.qualification_container {
     max-width: 768px;
 
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
         margin-left: auto;
         margin-right: auto;
     }
 
-    @include breakpoint(md){
+    @include breakpoint(md) {
         margin-left: $mb-1-5;
         margin-right: $mb-1-5;
     }
 
-    .qualification_tabs{
+    .qualification_tabs {
         display: flex;
         justify-content: center;
         margin-bottom: $mb-2;
+        gap: 1rem;
 
-        .qualification_button{
+        @include breakpoint(sm) {
+            gap: 0.5rem;
+        }
+
+        .qualification_button {
             font-size: $h3-font-size;
             font-weight: weight(medium);
-            color: $headline-main-color;
             margin: 0 $mb-1;
             cursor: pointer;
+            background: transparent;
+            border: none;
+            transition: 0.3s ease;
 
-            @include breakpoint(md_sm){
-               margin: 0 $mb-0-75;
+            @include breakpoint(md_sm) {
+                margin: 0 $mb-0-75;
             }
 
-            &:hover{
-                color: $first-color;
-            }
-
-            .qualification_icon{
+            .qualification_icon {
                 font-size: 1.8rem;
                 margin-right: $mb-0-25;
             }
+        }
 
-            &.qualification_active{
-                color: $second-color;
+        .education_button {
+            color: #4f46e5;
+
+            &:hover,
+            &.qualification_active {
+                color: #312e81;
+            }
+        }
+
+        .experience_button {
+            color: #059669;
+
+            &:hover,
+            &.qualification_active {
+                color: #065f46;
             }
         }
     }
 
-    .qualification_sections{
+    .qualification_sections {
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
-        
-        @include breakpoint(md_sm){
+
+        @include breakpoint(md_sm) {
             grid-template-columns: initial;
         }
 
-        .qualification_content{
+        .qualification_content {
             display: none;
 
-            &.qualification_content-active{
+            &.qualification_content-active {
                 display: block;
             }
 
-            .qualification_data{
+            .qualification_data {
                 display: grid;
                 grid-template-columns: 1fr max-content 1fr;
                 column-gap: 1.5rem;
 
-                @include breakpoint(sm){
-                    gap: 0.5rem;
+                @include breakpoint(sm) {
+                    column-gap: 0.75rem;
                 }
 
-                .qualification_title{
+                .qualification_title {
                     font-size: size(normal);
                     font-weight: weight(medium);
+                    margin-bottom: $mb-0-25;
                 }
 
-                .qualification_subtitle{
+                .qualification_subtitle {
                     display: inline-block;
                     font-size: size(small);
                     margin-bottom: $mb-1;
                 }
 
-                .qualification_calendar{
+                .qualification_calendar {
                     font-size: size(small);
-                    i{
+                    color: $text-color;
+
+                    i {
                         margin-right: $mb-0-25;
                     }
                 }
 
-                .qualification_rounder{
+                .qualification_rounder {
                     display: inline-block;
                     width: 13px;
                     height: 13px;
@@ -96,7 +116,7 @@
                     border-radius: 50%;
                 }
 
-                .qualification_line{
+                .qualification_line {
                     display: block;
                     width: 1px;
                     height: 100%;

@@ -1,9 +1,9 @@
 import React from 'react';
-import Social from './Social'; 
+import Social from './Social';
 import Data from './Data';
 import ScrollDown from './ScrollDown';
-import photo from '../../assets/avatar1-homepage.png';  
-import "./home.scss";
+import photo from '../../assets/avatar1-homepage.png';
+import './home.scss';
 
 const Home = () => {
   return (
@@ -12,13 +12,16 @@ const Home = () => {
         <div className="home_content grid">
           <Social />
 
-          <div 
+          <div
             className="home_img"
+            role="img"
+            aria-label="Klea Turhani profile"
             style={{ backgroundImage: `url(${photo})` }}
           ></div>
 
           <Data />
         </div>
+
         <ScrollDown />
       </div>
     </section>

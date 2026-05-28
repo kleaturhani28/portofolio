@@ -28,7 +28,7 @@ section.certifications {
 
   /* griglia delle card (solo qui, per non toccare il portfolio) */
   .work_container {
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
     gap: 2rem;
 
     @include breakpoint(md)   { grid-template-columns: 1fr; gap: 1.25rem; }
